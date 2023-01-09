@@ -1,0 +1,69 @@
+.trading-section {
+  position: relative;
+  min-height: 560px;
+  background: #FAFAFA;
+}
+.trading {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &__title {
+    margin-top: 80px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &__note {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__package {
+    display: flex;
+    margin-top: 52px;
+    .item {
+      flex: 1;
+      margin: 0 32px;
+
+      &__title {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      &__content {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #70707B;
+      }
+      &__trade {
+        position: absolute;
+        bottom: 80px;
+        .trade_btn {
+          width: 120px;
+          height: 40px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #18181B;
+          background: #E4E4E7;
+          border: none;
+          border-radius: 8px;
+          &:hover,
+          &:focus {
+            transition: 1s;
+            box-shadow: inset 8.5em 0 0 0 adjust-hue(#bfbfc4, 45deg);
+          }
+        }
+      }
+    }
+  }
+
+}

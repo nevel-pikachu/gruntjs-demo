@@ -1,0 +1,15 @@
+.trading-section
+  .trading.container
+    .trading__title &Dstrok;&#x1ED1;i t&aacute;c &dstrok;&aacute;ng tin c&#x1EAD;y cho h&agrave;nh tr&igrave;nh c&#x1EE7;a b&#x1EA1;n
+    .trading__note Giao d&#x1ECB;ch b&#x1EB1;ng VND v&#x1EDB;i ph&iacute; 0&dstrok;
+    .trading__package
+      - const tradingList = [  {    imgSrc: "images/recovery-convert.svg",    title: "Mua/bán bằng VND",    "content": "Mua và bán TetherUS một cách an toàn và dễ dàng trên VinEX P2P. Tìm ưu đãi tốt nhất bên dưới, mua và bán USDT bằng các phương thức thanh toán ưa thích của bạn ngay hôm nay.",    link: "/#"  },  {    imgSrc: "images/percentage-square.svg",    title: "Phí giao dịch thấp nhất",    "content": "VinEX dẫn đầu với phí giao dịch thấp và chương trình VIP hấp dẫn. Hãy tận hưởng mức phí giao dịch thấp nhất thị trường.",    link: "/#"  },  {    imgSrc: "images/shield-security.svg",    title: "Bảo mật cao",    "content": "Các biện pháp bảo mật cao cấp cùng cùng quỹ sàn của VinEX sẽ bảo vệ dữ liệu và tài sản của bạn trước rủi ro.",    link: "/#"  },  {    imgSrc: "images/24-support.svg",    title: "Hỗ trợ khách hàng 24/7",    "content": "Đội ngũ hỗ trợ nhiều kinh nghiệm của VinEX luôn túc trực 24/7 để sẵn sàng trợ giúp bạn.",    link: "/#"  }]
+      each item in tradingList  
+        .item
+          .item__img
+            img(src=item.imgSrc alt=item.title)
+          .item__title=  item.title 
+          .item__content=item.content
+          .item__trade
+            a(href=item.link)
+              button.trade_btn Giao d&#x1ECB;ch ngay

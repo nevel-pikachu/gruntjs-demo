@@ -1,0 +1,47 @@
+.discovery-section {
+  background: #FAFAFA;
+}
+.discovery {
+  display: flex;
+  justify-content: space-between;
+  &__content {
+    flex: 1;
+    .title {
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 59px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .body_content {
+      margin-top: 12px;
+    }
+    .submid_button {
+      position: relative;
+      width: 220px;
+      height: 48px;
+      margin-top: 12px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      background: #FAAC2E;
+      border: none;
+      border-radius: 8px;
+      &:hover,
+      &:focus {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em transparent;
+      }
+    }
+  }
+  &__logo {
+    flex: 1;
+  }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 adjust-hue(#ef6eae, 45deg); }
+}
+@-webkit-keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}

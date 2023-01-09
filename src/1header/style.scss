@@ -1,0 +1,60 @@
+.header_section {
+  display: flex;
+  padding: 16px 20px;
+}   
+.header {
+  &__logo {
+      width: 130px;
+      height: 32px;
+
+      a {
+        text-decoration: none;
+      }
+  }
+  
+  .logo {
+      &__content {
+          font-size: 42px;
+          color: #FAAC2E;
+      }
+  }
+
+  &__menu {
+      display: flex;
+      flex: 5;
+      padding-top: 16px;
+  }
+
+  .menu {
+      &__item {
+          margin-left: 12px;
+      }
+  }
+
+  &__action {
+      flex: 1;
+  }
+  .action {
+      display: flex;
+      justify-content: right;
+      
+      &__wallet_linked {
+          width: 160px;
+          height: 48px;
+          background-color: #FAAC2E;
+          border: none;
+          border-radius: 8px;
+          &:hover,
+          &:focus {
+              animation: pulse 1s;
+              box-shadow: 0 0 0 2em transparent;
+          }
+      }
+  }
+};
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 adjust-hue(#ef6eae, 45deg) }
+};
+@-webkit-keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover) }
+};

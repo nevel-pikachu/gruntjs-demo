@@ -1,0 +1,26 @@
+.footer_section#footer-section
+  .footer_section__item
+    .title V&#x1EC1; ch&uacute;ng t&ocirc;i
+    - const aboutUs = [{label: "Thông tin thêm",link: "/#" }, {label: "Cơ hội nghề nghiệp", link: "/#" }, { label: "Hợp tác kinh doanh", link: "/#" }, { label: "Cộng đồng", link: "/#" }, { label: "Blog", link: "/#" }, { label: "Điều khoản", link: "/#" }, { label: "Riêng tư", link: "/#" }, { label: "Cảnh báo rủi ro", link: "/#" }];  
+    each item in aboutUs
+      .label
+        a(href=item.link)= item.label
+  .footer_section__item
+    .title S&#x1EA3;n ph&#x1EA9;m
+    - const productList = [  {label: "Exchange",link: "/#" }, {label: "Card", link: "/#" }, { label: "Trust Wallet", link: "/#" }];
+    each item in productList
+      .label
+        a(href=item.link)= item.label
+  .footer_section__item
+    .title D&#x1ECB;ch v&#x1EE5;
+    - const serviceList = [  { label: "Đăng ký thương nhân P2P", link: "/#" }, { label: "Card", link: "/#" }, { label: "Trust Wallet", link: "/#" }];
+    each item in serviceList
+      .label
+        a(href=item.link)= item.label 
+  .footer_section__item
+    .title H&#x1ED7; tr&#x1EE3;
+    - const supportList = [  { label: "Phản hồi", link: "/#" }, { label: "Trung tâm trợ giúp", link: "/#" }, { label: "Phí giao dịch", link: "/#" }];
+    each item in supportList
+      .label
+        a(href=item.link)= item.label
+.end_footer VinEX &copy; 2022

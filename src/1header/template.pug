@@ -1,0 +1,28 @@
+.header_section.header
+  .header__logo.logo
+    a(href='file:///D:/pikachu/test-grunt/build/index.html')
+      span.logo__content VinEX
+  .header__menu.menu
+    .dropdown.menu__item
+      #dropdownMenuButton.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+        | Giao d&#x1ECB;ch
+      ul.dropdown-menu(aria-labelledby='dropdownMenuButton')
+        li
+          a.dropdown-item(href='#') Action
+        li
+          a.dropdown-item(href='#') Another action
+        li
+          a.dropdown-item(href='#') Something else here
+    .dropdown.menu__item
+      #dropdownMenuButton.dropdown-toggle(type='button' data-mdb-toggle='dropdown' aria-expanded='false')
+        | H&#x1ED7; tr&#x1EE3;
+      ul.dropdown-menu(aria-labelledby='dropdownMenuButton')
+        li
+          a.dropdown-item(href='#') Action
+        li
+          a.dropdown-item(href='#') Another action
+        li
+          a.dropdown-item(href='#') Something else here
+  .header__action.action(@click='handleTestPinia')
+    button.action__wallet_linked
+      | Li&ecirc;n k&#x1EBF;t v&iacute;

@@ -1,0 +1,32 @@
+{
+  "name": "test-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.5.3",
+    "grunt-combo-html-css-js": "^0.1.2",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-pug": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-minify-html": "^3.0.0",
+    "grunt-minjson": "^0.4.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-uncss": "^0.10.1",
+    "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-inline-css": "^1.0.0",
+    "pug": "^3.0.2"
+  }
+}
